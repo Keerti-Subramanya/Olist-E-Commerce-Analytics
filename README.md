@@ -80,6 +80,8 @@ stg_order_payments and stg_order_reviews connect directly back to the stg_orders
 ## 💡 Question and Solution
 Below is a curated selection of complex SQL queries crafted to answer the core business questions.
 
+</br>
+
 1. How many orders, customers, and products are in the dataset?
 
 ```SQL
@@ -110,6 +112,7 @@ Answer:
 
 There are 99,441 total orders and customers, with 32,951 unique products available.
 
+</br>
 
 2. What is the breakdown of order statuses?
 
@@ -141,6 +144,7 @@ Answer:
 
 The vast majority (97.02%) of orders are successfully delivered.
 
+</br>
 
 3. Which are the Top 5 states by order volume?
 
@@ -171,6 +175,7 @@ Answer:
 
 São Paulo (SP) is the leading state for order volume, followed by Rio de Janeiro (RJ).
 
+</br>
 
 4. What is the Average Order Value (AOV) and the pricing spread?
 
@@ -198,6 +203,7 @@ Answer:
 
 The average order value on the platform is $154.10.
 
+</br>
 
 5. What is the average review score segmented by order status?
 
@@ -228,6 +234,7 @@ Answer:
 
 Delivered orders receive an average rating of 4.15, while canceled orders drop drastically to 1.80.
 
+</br>
 
 6. What is the distribution of payment types?
 
@@ -256,6 +263,7 @@ Answer:
 
 Credit cards are the dominant payment method, capturing over 76,000 transactions.
 
+</br>
 
 7. Which are the Top 5 products by total revenue?
 
@@ -288,6 +296,7 @@ Answer:
 
 The top-earning individual product belongs to the health/beauty category, generating $63,885.
 
+</br>
 
 8. Which are the Top 5 sellers by total revenue?
 
@@ -320,6 +329,7 @@ Answer:
 
 The top seller is based in SP, managing over 1,150 orders for a combined revenue of $229,472.
 
+</br>
 
 9. What is the average number of delivery days by order status?
 
@@ -349,6 +359,7 @@ Answer:
 
 Successfully delivered orders take an average of 12 days to reach the customer.
 
+</br>
 
 10. What is the volume of orders generated per month?
 
@@ -377,6 +388,7 @@ Answer:
 
 Order volume scales chronologically, starting with 800 orders in January 2017.
 
+</br>
 
 11. What percentage of the user base are repeat customers?
 
@@ -410,6 +422,7 @@ Answer:
 
 Brand loyalty is low; only 3.12% of the user base has made more than one purchase.
 
+</br>
 
 12. Which are the Top 5 overall categories by revenue?
 
@@ -441,6 +454,7 @@ Answer:
 
 Health & Beauty is the highest-grossing product category overall.
 
+</br>
 
 13. What is the average impact of shipping costs relative to item prices?
 
@@ -468,6 +482,7 @@ Answer:
 
 On average, shipping costs represent roughly 22.5% of the actual item price.
 
+</br>
 
 14. Which categories possess the highest average customer reviews?
 
@@ -501,6 +516,7 @@ Answer:
 
 CDs and General Interest Books maintain the highest consumer satisfaction scores.
 
+</br>
 
 15. What is the summary of delays across the order lifecycle?
 
