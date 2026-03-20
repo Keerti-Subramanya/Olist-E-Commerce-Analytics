@@ -82,7 +82,7 @@ Below is a curated selection of complex SQL queries crafted to answer the core b
 
 </br>
 
-1. How many orders, customers, and products are in the dataset?
+### 1. How many orders, customers, and products are in the dataset?
 
 ```SQL
 SELECT 
@@ -114,7 +114,7 @@ There are 99,441 total orders and customers, with 32,951 unique products availab
 
 </br>
 
-2. What is the breakdown of order statuses?
+### 2. What is the breakdown of order statuses?
 
 ```SQL
 SELECT order_status, COUNT(*) as order_count,
@@ -146,7 +146,7 @@ The vast majority (97.02%) of orders are successfully delivered.
 
 </br>
 
-3. Which are the Top 5 states by order volume?
+### 3. Which are the Top 5 states by order volume?
 
 ```SQL
 SELECT c.customer_state, COUNT(DISTINCT o.order_id) as order_count
@@ -177,7 +177,7 @@ São Paulo (SP) is the leading state for order volume, followed by Rio de Janeir
 
 </br>
 
-4. What is the Average Order Value (AOV) and the pricing spread?
+### 4. What is the Average Order Value (AOV) and the pricing spread?
 
 ```SQL
 SELECT 
@@ -205,7 +205,7 @@ The average order value on the platform is $154.10.
 
 </br>
 
-5. What is the average review score segmented by order status?
+### 5. What is the average review score segmented by order status?
 
 ```SQL
 SELECT o.order_status, 
@@ -236,7 +236,7 @@ Delivered orders receive an average rating of 4.15, while canceled orders drop d
 
 </br>
 
-6. What is the distribution of payment types?
+### 6. What is the distribution of payment types?
 
 ```SQL
 SELECT payment_type, 
@@ -265,7 +265,7 @@ Credit cards are the dominant payment method, capturing over 76,000 transactions
 
 </br>
 
-7. Which are the Top 5 products by total revenue?
+### 7. Which are the Top 5 products by total revenue?
 
 ```SQL
 SELECT p.product_id, p.product_category_name,
@@ -298,7 +298,7 @@ The top-earning individual product belongs to the health/beauty category, genera
 
 </br>
 
-8. Which are the Top 5 sellers by total revenue?
+### 8. Which are the Top 5 sellers by total revenue?
 
 ```SQL
 SELECT s.seller_id, s.seller_state,
@@ -331,7 +331,7 @@ The top seller is based in SP, managing over 1,150 orders for a combined revenue
 
 </br>
 
-9. What is the average number of delivery days by order status?
+### 9. What is the average number of delivery days by order status?
 
 ```SQL
 SELECT order_status,
@@ -361,7 +361,7 @@ Successfully delivered orders take an average of 12 days to reach the customer.
 
 </br>
 
-10. What is the volume of orders generated per month?
+### 10. What is the volume of orders generated per month?
 
 ```SQL
 SELECT DATE_FORMAT(order_purchase_timestamp, '%Y-%m') as month,
@@ -390,7 +390,7 @@ Order volume scales chronologically, starting with 800 orders in January 2017.
 
 </br>
 
-11. What percentage of the user base are repeat customers?
+### 11. What percentage of the user base are repeat customers?
 
 ```SQL
 SELECT 
@@ -424,7 +424,7 @@ Brand loyalty is low; only 3.12% of the user base has made more than one purchas
 
 </br>
 
-12. Which are the Top 5 overall categories by revenue?
+### 12. Which are the Top 5 overall categories by revenue?
 
 ```SQL
 SELECT p.product_category_name,
@@ -456,7 +456,7 @@ Health & Beauty is the highest-grossing product category overall.
 
 </br>
 
-13. What is the average impact of shipping costs relative to item prices?
+### 13. What is the average impact of shipping costs relative to item prices?
 
 ```SQL
 SELECT 
@@ -484,7 +484,7 @@ On average, shipping costs represent roughly 22.5% of the actual item price.
 
 </br>
 
-14. Which categories possess the highest average customer reviews?
+### 14. Which categories possess the highest average customer reviews?
 
 ```SQL
 SELECT p.product_category_name,
@@ -518,7 +518,7 @@ CDs and General Interest Books maintain the highest consumer satisfaction scores
 
 </br>
 
-15. What is the summary of delays across the order lifecycle?
+### 15. What is the summary of delays across the order lifecycle?
 
 ```SQL
 SELECT 
